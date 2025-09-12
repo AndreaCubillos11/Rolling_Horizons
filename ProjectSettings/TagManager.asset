@@ -9,6 +9,8 @@ TagManager:
   - Rake
   - Platform
   - Desaparecer
+  - RecolectableF
+  - Bushes
   layers:
   - Default
   - TransparentFX

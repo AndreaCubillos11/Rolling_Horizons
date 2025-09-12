@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Rotador : MonoBehaviour
+
 {
+
+
     // Start is called before the first frame update
     void Start()
     {
+
 
     }
 
@@ -15,4 +19,5 @@ public class Rotador : MonoBehaviour
     {
         transform.Rotate(new Vector3(90, 0, 0) * Time.deltaTime);
     }
+
 }
