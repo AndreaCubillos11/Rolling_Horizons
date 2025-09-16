@@ -7,6 +7,9 @@ public class PlayerController2 : MonoBehaviour
     public float speed;
     private Vector3 posicionOriginal;
     private int score = 0;
+    public AudioSource paredes;
+    public AudioSource audioRecoleccion;
+    public AudioSource audioRecoleccionF;
 
 
     void Start()
@@ -19,7 +22,6 @@ public class PlayerController2 : MonoBehaviour
 
         systemaParticulas.Stop();
 
-        sonido1 = GetComponent<AudioSource>();
         */
     }
 
@@ -38,9 +40,45 @@ void FixedUpdate()
 
     void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.CompareTag("Recolectable"))
+        
+        {
+            score = score + 10;
+            Debug.Log("Ganas 10 puntos");
+            Debug.Log("Puntaje: "+ score);
+           // posicion = other.gameObject.transform.position;// obtener posicion del cubo contra el cual colisiona
+            //particulas.position = posicion; // ubica las particulas en la posicion del cubo
+           // systemaParticulas = particulas.GetComponent<ParticleSystem>();
+           // systemaParticulas.Play();
+
+            Destroy(other.gameObject);
+            audioRecoleccion.Play();
+        }
+        if (other.gameObject.CompareTag("BadCoin"))
+        
+        {
+            score = score - 5;
+            Debug.Log("Pierdes 5 puntos ");
+            Debug.Log("Puntaje: "+ score);
+
+            //posicionF = other.gameObject.transform.position;// obtener posicion del cubo contra el cual colisiona
+           // particulasF.position = posicionF; // ubica las particulas en la posicion del cubo
+            //systemaParticulasF = particulasF.GetComponent<ParticleSystem>();
+           // systemaParticulasF.Play();
+
+
+            Destroy(other.gameObject);
+            audioRecoleccionF.Play();
+        }
+
 
     }
 void OnCollisionEnter(Collision other){
-        
+        if (other.gameObject.CompareTag("Walls"))
+        {
+
+        paredes.Play();
+
+        }
 }
 }

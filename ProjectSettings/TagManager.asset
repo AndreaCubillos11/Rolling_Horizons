@@ -11,6 +11,10 @@ TagManager:
   - Desaparecer
   - RecolectableF
   - Bushes
+  - Suelo
+  - BadCoin
+  - Paredes
+  - Walls
   layers:
   - Default
   - TransparentFX
