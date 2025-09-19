@@ -10,19 +10,34 @@ public class PlayerController2 : MonoBehaviour
     public AudioSource paredes;
     public AudioSource audioRecoleccion;
     public AudioSource audioRecoleccionF;
+    public Transform particulas;
+    private ParticleSystem systemaParticulas; 
+    private Vector3 posicion; 
+
+    public Transform particulasC;
+    private ParticleSystem systemaParticulasC; 
+    private Vector3 posicionC; 
+
 
 
     void Start()
     {
 
         rb = GetComponent<Rigidbody>();
+
         posicionOriginal = transform.position; // Guarda la posición inicial
 
-        /*systemaParticulas = particulas.GetComponent<ParticleSystem>();
+        systemaParticulas = particulas.GetComponent<ParticleSystem>();
 
         systemaParticulas.Stop();
 
-        */
+
+        systemaParticulasC = particulasC.GetComponent<ParticleSystem>();
+
+        systemaParticulasC.Stop();
+
+
+        
     }
 
 void FixedUpdate()
@@ -46,10 +61,11 @@ void FixedUpdate()
             score = score + 10;
             Debug.Log("Ganas 10 puntos");
             Debug.Log("Puntaje: "+ score);
-           // posicion = other.gameObject.transform.position;// obtener posicion del cubo contra el cual colisiona
-            //particulas.position = posicion; // ubica las particulas en la posicion del cubo
-           // systemaParticulas = particulas.GetComponent<ParticleSystem>();
-           // systemaParticulas.Play();
+
+            posicion = other.gameObject.transform.position;// obtener posicion del cubo contra el cual colisiona
+            particulas.position = new Vector3(posicion.x, posicion.y-0.5f, posicion.z); // ubica las particulas en la posicion del cubo
+            systemaParticulas = particulas.GetComponent<ParticleSystem>();
+            systemaParticulas.Play();
 
             Destroy(other.gameObject);
             audioRecoleccion.Play();
@@ -61,10 +77,10 @@ void FixedUpdate()
             Debug.Log("Pierdes 5 puntos ");
             Debug.Log("Puntaje: "+ score);
 
-            //posicionF = other.gameObject.transform.position;// obtener posicion del cubo contra el cual colisiona
-           // particulasF.position = posicionF; // ubica las particulas en la posicion del cubo
-            //systemaParticulasF = particulasF.GetComponent<ParticleSystem>();
-           // systemaParticulasF.Play();
+            posicionC = other.gameObject.transform.position;// obtener posicion del cubo contra el cual colisiona
+            particulasC.position = new Vector3(posicionC.x, posicionC.y-0.5f, posicionC.z); // ubica las particulas en la posicion del cubo
+            systemaParticulasC = particulasC.GetComponent<ParticleSystem>();
+            systemaParticulasC.Play();
 
 
             Destroy(other.gameObject);
