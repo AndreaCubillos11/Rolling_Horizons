@@ -14,14 +14,14 @@ El juego cuenta con dos niveles:
 
 ### 1. Clonar o descargar el repositorio
 
-- **Opción 1:
-     - Clonar con Git**
+- **Opción 1:**
+     - Clonar con Git:
 ```bash
 git clone https://github.com/AndreaCubillos11/Rolling_Horizons.git
 ```
 
-- **Opción 2:
-     - Descargar ZIP**  
+- **Opción 2:**
+     - Descargar ZIP:  
 En la página del repositorio, haz clic en el botón **Code > Download ZIP**, descomprime la carpeta y guárdala en tu PC.  
 
 ---
