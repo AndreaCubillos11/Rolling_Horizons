@@ -72,4 +72,4 @@ Si quieres generar un ejecutable:
  
 - **Assets 3D externos** – Recursos adicionales descargados de otras páginas para ampliar la ambientación.  
 - **Sistemas de partículas** (*NamuFX* y *Particlecollection_Free*) – Efectos visuales dinámicos y ambientales.  
-- **Sonidos** – Música de fondo por nivel y sonidos de colisión y recolección.  
+- **Sonidos** – Música de fondo por nivel, sonidos de colisión y recolección.  
