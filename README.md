@@ -1,4 +1,4 @@
-# Rolling Horizons 
+# Rolling Horizons 🍃🎮
 
 **Rolling Horizons** es un mini juego en **Unity** donde controlas una esfera que recorre laberintos ambientados en diferentes escenarios, recolectando objetos y esquivando trampas para avanzar en cada nivel.
 
@@ -10,16 +10,18 @@ El juego cuenta con dos niveles:
 
 ---
 
-## Instrucciones para abrir y probar el juego en Unity
+## 🕹️ Instrucciones para abrir y probar el juego en Unity
 
 ### 1. Clonar o descargar el repositorio
 
-- **Opción 1: Clonar con Git**
+- **Opción 1:
+     - Clonar con Git**
 ```bash
 git clone https://github.com/AndreaCubillos11/Rolling_Horizons.git
 ```
 
-- **Opción 2: Descargar ZIP**  
+- **Opción 2:
+     - Descargar ZIP**  
 En la página del repositorio, haz clic en el botón **Code > Download ZIP**, descomprime la carpeta y guárdala en tu PC.  
 
 ---
@@ -58,7 +60,7 @@ Si quieres generar un ejecutable:
 
 ---
 
-## Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas
 
 - **Unity 2019.4.36f1** – Motor principal del juego.  
 - **C#** – Lenguaje de programación para la lógica.  
@@ -66,7 +68,7 @@ Si quieres generar un ejecutable:
 - **Git & GitKraken** – Control de versiones y manejo visual del repositorio.  
 ---
 
-## Recursos
+## 📦 Recursos
  
 - **Assets 3D externos** – Recursos adicionales descargados de otras páginas para ampliar la ambientación.  
 - **Sistemas de partículas** (*NamuFX* y *Particlecollection_Free*) – Efectos visuales dinámicos y ambientales.  
