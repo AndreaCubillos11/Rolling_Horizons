@@ -46,7 +46,7 @@ En la página del repositorio, haz clic en el botón **Code > Download ZIP**, de
 
 ---
 
-## ⚡ Opcional: Compilar el juego
+## ⚡Opcional: Compilar el juego
 
 Si quieres generar un ejecutable:
 
